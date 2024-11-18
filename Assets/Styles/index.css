@@ -1,7 +1,23 @@
+/* Systematics */
+.content {
+    max-width: 1500px;
+    max-height: 1000px;
+    margin: auto;
+    background: rgb(151, 165, 82);
+    padding: 10px;
+}
+
 /*  Generics */
 body
 {
-    background-color: rgb(151, 165, 82);
+    background-color: rgb(90, 95, 66);
+}
+
+b
+{
+    color: white;
+    text-align: center;
+    font-family: courier;
 }
 
 h1
