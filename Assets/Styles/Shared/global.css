@@ -1,0 +1,114 @@
+/* Systematics */
+.wrapper
+{
+    background: rgba(39, 63, 133, 0.5);
+    
+    position: absolute;
+    margin: auto;
+    
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 60%;
+
+    height: 400px;
+    width: 1400px;
+}
+
+/* Advanced */
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(48, 79, 172);
+}
+  
+li
+{
+    float: left;
+    display: inline;
+}
+
+li a:hover
+{
+    background-color: #29a6c5;
+}
+
+li a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*  Generics */
+body
+{
+    background-color: rgb(140, 155, 64)
+}
+
+b
+{
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-weight: normal;
+}
+
+h1
+{
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-weight: normal;
+}
+
+h2
+{
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-weight: normal;
+}
+
+h3
+{
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-weight: normal;
+}
+
+h4
+{
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-weight: normal;
+}
+
+h5
+{
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-weight: normal;
+}
+
+button
+{
+    background-color: #2d90e1;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

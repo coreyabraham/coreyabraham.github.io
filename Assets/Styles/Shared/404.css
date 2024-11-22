@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+.center 
+{
+    position: absolute;
+    margin: auto;
+
+    top: 40%;
+    left: 0%;
+    right: 0%;
+    bottom: 50%;
+}
+
+h1
+{
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Mono';
+    font-weight: bold;
+}
+
+h2
+{
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Mono';
+    font-weight: normal;
+}
