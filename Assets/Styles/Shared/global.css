@@ -1,18 +1,28 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+/* Customs */
+#topbarGradient 
+{
+    background-image: linear-gradient(
+        rgb(37, 144, 148),
+        rgb(48, 79, 172)
+    );
+}
+
 /* Systematics */
 .wrapper
 {
-    background: rgba(39, 63, 133, 0.5);
-    
     position: absolute;
     margin: auto;
     
-    top: 0%;
+    top: 10%;
     left: 0%;
     right: 0%;
     bottom: 60%;
 
-    height: 400px;
-    width: 1400px;
+    height: 32.5%;
+    width: 95%;
 }
 
 /* Advanced */
@@ -29,6 +39,10 @@ li
 {
     float: left;
     display: inline;
+
+    font-size: small;
+    font-family: 'Segoe UI';
+    font-weight: normal;
 }
 
 li a:hover
@@ -63,7 +77,7 @@ h1
 {
     color: white;
     text-align: center;
-    font-family: 'Segoe UI';
+    font-family: 'Roboto Mono';
     font-weight: normal;
 }
 
@@ -71,7 +85,7 @@ h2
 {
     color: white;
     text-align: center;
-    font-family: 'Segoe UI';
+    font-family: 'Roboto Mono';
     font-weight: normal;
 }
 
@@ -79,7 +93,7 @@ h3
 {
     color: white;
     text-align: center;
-    font-family: 'Segoe UI';
+    font-family: 'Roboto Mono';
     font-weight: normal;
 }
 
@@ -87,7 +101,7 @@ h4
 {
     color: white;
     text-align: center;
-    font-family: 'Segoe UI';
+    font-family: 'Roboto Mono';
     font-weight: normal;
 }
 
@@ -95,7 +109,7 @@ h5
 {
     color: white;
     text-align: center;
-    font-family: 'Segoe UI';
+    font-family: 'Roboto Mono';
     font-weight: normal;
 }
 
