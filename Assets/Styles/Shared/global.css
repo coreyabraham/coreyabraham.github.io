@@ -1,25 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
-#topbarGradient 
+body
+{
+    margin: 0;
+    background-color: rgb(140, 155, 64)
+}
+
+#barGradient 
 {
     background-image: linear-gradient(
         rgb(37, 144, 148),
         rgb(48, 79, 172)
     );
-}
-
-.wrapper
-{
-    position: absolute;
-    margin: auto;
-    
-    top: 10%;
-    left: 0%;
-    right: 0%;
-    bottom: 60%;
-
-    height: 32.5%;
-    width: 95%;
 }
 
 p.a 
@@ -37,43 +29,80 @@ p.c
     white-space: pre;
 }
 
-ul
-{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(48, 79, 172);
-}
-  
-li
+.menu 
 {
     float: left;
-    display: inline;
+    position: fixed;
+    
+    width: 5%;
+    height: 100%;
 
-    font-size: small;
+    /* margin: 0;
+    padding: 0; */
+
+    list-style-type: none;
+    background-color: #f1f1f1;
+}
+
+.menuitem 
+{
+    padding: 8px;
+    margin-top: 12px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+    font-size: medium;
     font-family: 'Segoe UI';
     font-weight: normal;
 }
 
-li a:hover
+.menuitem:hover
 {
     background-color: #29a6c5;
 }
 
-li a
+.main 
 {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    float: right;
+    width: 90%;
+    padding: 0 20px;
+    overflow: hidden;
 }
 
-body
+@media only screen and (max-width:1000px)
 {
-    background-color: rgb(140, 155, 64)
+    .main
+    {
+        margin-top: 350px;
+    }
+
+    .menu, .menuitem
+    {
+        padding: 8px;
+        margin-top: 0px;
+        
+        width: 100%;
+        height: 10%;
+    }
+
+    #barGradient
+    {
+        height: auto;   
+    }
 }
+
+/* @media only screen and (max-width:800px) 
+{
+    .main 
+    {
+        width: 100%;
+        padding: 0;
+    }
+} */
 
 b
 {
@@ -121,20 +150,4 @@ h5
     text-align: center;
     font-family: 'Roboto Mono';
     font-weight: normal;
-}
-
-button
-{
-    background-color: #2d90e1;
-    color: white;
-
-    border: none;
-
-    margin: 4px 2px;
-    padding: 15px 32px;
-    font-size: 16px;
-    
-    text-align: center;
-    display: inline-block;
-    cursor: pointer;
 }
