@@ -1,13 +1,32 @@
-img
+.column 
 {
-    margin: auto;
+    float: left;
+    width: 33.33%;
+    padding: 20px;
 }
 
-z
+.row::after
 {
-    color: white;
-    
-    text-align: center;
-    font-family: 'Segoe UI';
-    font-weight: normal;
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.center 
+{
+    position: inherit;
+    left: 50%;
+}
+
+@media only screen and (max-width:1000px)
+{
+    .column {
+        width: 100%;
+      }
+}
+
+img
+{
+    width: 369px;
+    height: 369px;
 }
