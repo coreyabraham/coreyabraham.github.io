@@ -3,15 +3,15 @@
 body
 {
     margin: 0;
-    background-color: rgb(75, 75, 75)
+    background-color: rgb(25, 25, 25)
     /* Original `background-color` : 140, 155, 64 */
 }
 
 #barGradient 
 {
     background-image: linear-gradient(
-        rgb(37, 144, 148),
-        rgb(48, 79, 172)
+        rgb(37, 148, 100),
+        rgb(58, 172, 48)
     );
 }
 
@@ -63,7 +63,7 @@ p.c
 
 .menuitem:hover
 {
-    background-color: #29a6c5;
+    background-color: #00ff77;
 }
 
 .main 
@@ -105,17 +105,17 @@ a
 
 a:link
 {
-    color: rgb(119, 170, 228);
+    color: rgb(8, 106, 218);
 }
 
 a:visited
 {
-    color: rgb(119, 170, 228);
+    color: rgb(226, 10, 53);
 }
 
 a:hover
 {
-    color: rgb(164, 231, 240)
+    color: rgb(255, 255, 255)
 }
 
 b
@@ -172,4 +172,17 @@ h5
     text-align: center;
     font-family: 'Roboto Mono';
     font-weight: normal;
+}
+
+button 
+{
+    border: none;
+    background-color: rgb(70, 70, 70);
+    color: rgb(255, 255, 255);
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
 }
