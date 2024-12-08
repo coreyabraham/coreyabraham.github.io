@@ -27,6 +27,5 @@
 
 img
 {
-    width: 369px;
-    height: 369px;
+    max-width: 75%;
 }
