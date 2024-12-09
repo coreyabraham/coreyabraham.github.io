@@ -20,30 +20,30 @@
                 <div class="menuitem"><a href="../Core/works.html">Works</a></div>
             </div>    
 
-            <div class = "main"></div>
+            <div class = "main">
                 <h1>C.A Website // Projects // Monstacking</h1>    
                 
                 <span style="display: inline-block; height: 10px;"></span>
 
-                <h2>Images</h2>
+                <h2>In-Game Screenshots</h2>
 
                 <div class = "slideshow-container">
                     <div class="mySlides fade">
                         <div class="numbertext">1 / 3</div>
                         <img src="../../Images/Monstacking/1.png" style="width: 100%">
-                        <div class="text">Screenshot 1</div>
+                        <div class="text">Scoreboard and Timer in diegetic environment</div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext">2 / 3</div>
                         <img src="../../Images/Monstacking/2.png" style="width: 100%">
-                        <div class="text">Screenshot 2</div>
+                        <div class="text">Main Menu Interface when you startup the game</div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext">3 / 3</div>
                         <img src="../../Images/Monstacking/3.png" style="width: 100%">
-                        <div class="text">Screenshot 3</div>
+                        <div class="text">Vehicles driving about on the road with active timer in background</div>
                     </div>
 
                     <a class = "prev" onclick = "plusSlides(-1)">❮</a>
@@ -60,27 +60,60 @@
 
                 <h2>Project Details</h2>
                 <p>Game Engine: Unity</p>
-                <p>Platform: PC // Windows 7+ x86_64</p>
+                <p>Platform: PC // Windows 7+ x64</p>
                 <p>Role(s): Systems and UI Programmer</p>
-                <p>Development Date: ???, 2023 - ???, 2023</p>x
+                <p>Development Date: 10th of June, 2024 - 15th of July, 2024</p>
 
                 <span style="display: inline-block; height: 30px;"></span>
 
                 <h2>Brief</h2>
-                <p>Your mother.</p>
+                <p>
+                    Monstacking is a 3D stacking game designed with Virtual Reality in mind as you grab oncoming vehicles in an attempt to stack them on top of a recently lodged bridge and gain a highscore!
+                    The game in question is fairly simple as it was only in development for approximately 4 weeks.
+                    The game would've had more time to be developed seeing as there was two weeks within that time to begin with, however, they were reserved for holidays, so realistically it was a four week project.
+                </p>
 
                 <span style="display: inline-block; height: 30px;"></span>
 
                 <h2>Contributions</h2>
-                <p>INSERT DESCRIPTION HERE!</p>
+                <p>
+                    My contribution to the project came in the form of Programming the entire project, as we were part of a small group that only had the one Programmer in it, that being myself of course!
+                    Most of the project's runtime on my behalf was used to experiment and figure out how to get the Virtual Reality kit Unity provides via it's Package Manager works, of course that being the <a href="https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.3/manual/index.html">XR Device Simulator</a> package.
+                </p>
+                
+                <span style="display: inline-block; height: 20px;"></span>
+                
+                <p>
+                    A more notable use of time when it comes to the project comes from the use of Data File Management.
+                    I wrote a `DataManager.cs` C# Class for the project to allow tracking of Highscores to give Players more insentive to replay the game instead of it being a one-and-done experience!
+                    It nearly didn't make the cut however due to UI issues at the time of the project wrapping up it's development and the Script as a whole not working when deployed to a real Android XR system without explaination.
+                    After a really long time debugging the problem however, it turns out that I had setup the Script wrong when it comes to the Directory it reads and writes to.
+                    It originally wrote to a Directory it creates on startup (if it isn't already present within the filesystem) to write the data within that was stored where the game's executable was.
+                    However, after doing some research, it turns out that writing to that Directory, let alone creating it with XR systems, does NOT have permissions to write there.
+                    So I ended up using the persistant location option Unity has by default and just like that, the system made the cut and was functional in the final build like nothing happened!
+                </p>
 
+                <span style="display: inline-block; height: 20px;"></span>
+
+                <p>
+                    Outside of that however, there really isn't all that much to talk about with this project aside from the smaller details.
+                    All User Interface elements (aside from the in-game billboard) were programmed right before the project's development had concluded.
+                    Mainly due to how fairly simple it was to implement and how much depth we decided to go into with it later on.
+                    We knew as a collective team we wanted a User Interface for the game, however only at the beginning and end, as having it during gameplay non-diegetically would've likely ruined the immersion the game was going for.
+                </p>
+                
                 <span style="display: inline-block; height: 30px;"></span>
 
                 <h2></h2>
 
                 <h2>Links</h2>
-                <p><a href="https://peglegblake.itch.io/lights-out">Release Itch.io Page</a></p>
+                <p><a href="https://github.com/coreyabraham/monstacking-game">GitHub Repository</a></p>
+
+                <span style="display: inline-block; height: 10px;"></span>
+
                 <p><a href="../Core/works.html">Back to `Works` Page</a></p>
+
+                <span style="display: inline-block; height: 30px;"></span>
             </div>
         </div>
     </body>
