@@ -13,15 +13,64 @@
 	
 	<body>
 		<div style="overflow: auto">
-			<div class = "menu" id = "barGradient">
-				<div class = "menuitem">C.A Website | Prototype Page</div>
-	
-				<div class = "menuitem"><a href="../../../index.html">Home</a></div>
-				<div class = "menuitem"><a href="../Core/works.html">Works</a></div>
-				<div class = "menuitem"><a href="../Core/resume.html">Resume</a></div>
-				<div class = "menuitem"><a href="../Core/socials.html">Socials</a></div>
+			<div class="menu" id="barGradient">
+				<div class="menuheader">Navi-Bar</div>
 
-				<div class = "menuitem"><a href="../Testing/prototype.html">Prototype</a></div>
+				<div class="menuitem">
+					<button class="button menubutton" onclick="window.location.href='index.html'">
+						<a>Home</a>
+					</button>
+				</div>
+				
+				<div class="menuitem">
+					<button class="button menubutton" onclick="window.location.href='./Assets/Pages/Core/works.html'">
+						<a>My Works</a>
+					</button>
+				</div>
+
+				<span style="display: block; height: 50px;"></span>
+				<div style="border-top: 1px solid white;"></div>
+				
+				<div class="menuitem">
+					<button class="button menubutton" name="toggleable" onclick="toggle()">
+						<a>Projects</a>
+					</button>
+
+					<script>
+						function toggle()
+						{
+							let buttons = document.getElementsByName("toggleable");
+							for (i = 0; i < buttons.length; i++)
+							{
+								buttons[i].style.display = "none";	
+							}
+						}
+					</script>
+				</div>
+
+				<div class="menuitem">
+					<button class="button menubutton" name="toggleable" onclick="window.location.href='./Assets/Pages/Projects/lights_out.html'">
+						<a>Lights Out</a>
+					</button>
+				</div>
+
+				<div class="menuitem">
+					<button class="button menubutton" name="toggleable" onclick="window.location.href='./Assets/Pages/Projects/monstacking.html'">
+						<a>Monstacking</a>
+					</button>
+				</div>
+
+				<div class="menuitem">
+					<button class="button menubutton" name="toggleable" onclick="window.location.href='./Assets/Pages/Projects/scurry.html'">
+						<a>Scurry</a>
+					</button>
+				</div>
+
+				<div class="menuitem">
+					<button class="button menubutton" name="toggleable" onclick="window.location.href='./Assets/Pages/Projects/typical_custom_engine.html'">
+						<a>Typical Custom Engine</a>
+					</button>
+				</div>
 			</div>
 
 			<div class = "main">

@@ -30,35 +30,68 @@ p.c
     white-space: pre;
 }
 
+.button 
+{
+    border: none;
+    background-color: rgb(70, 70, 70);
+    color: rgb(255, 255, 255);
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.menubutton
+{
+    background-color: rgba(0, 0, 0, 0);
+    display: block;
+    
+    width: 100%;
+    height: 100%;
+
+    padding: 12px;
+}
+
 .menu 
 {
     float: left;
     position: fixed;
     
-    width: 5%;
+    width: 6.5%;
     height: 100%;
-
-    /* margin: 0;
-    padding: 0; */
 
     list-style-type: none;
     background-color: #f1f1f1;
+
+    z-index: 10;
 }
 
-.menuitem 
+.menuheader
 {
-    padding: 8px;
-    margin-top: 12px;
+    padding: 20px;
     border-bottom: 1px solid rgb(255, 255, 255);
+    margin-top: 12px;
 
     display: block;
     color: white;
     text-align: center;
-    text-decoration: none;
 
     font-size: medium;
     font-family: 'Segoe UI';
     font-weight: normal;
+
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.menuitem
+{
+    padding: 0px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+
+    display: block;
+    color: white;
 }
 
 .menuitem:hover
@@ -69,7 +102,7 @@ p.c
 .main 
 {
     float: right;
-    width: 90%;
+    width: 87.5%;
     padding: 0 20px;
     overflow: hidden;
 }
@@ -83,11 +116,15 @@ p.c
 
     .menu, .menuitem
     {
-        padding: 8px;
         margin-top: 0px;
         
         width: 100%;
         height: 10%;
+    }
+
+    .menubutton
+    {
+        margin: 0px;
     }
 
     #barGradient
@@ -172,17 +209,4 @@ h5
     text-align: center;
     font-family: 'Roboto Mono';
     font-weight: normal;
-}
-
-button 
-{
-    border: none;
-    background-color: rgb(70, 70, 70);
-    color: rgb(255, 255, 255);
-    padding: 7px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
 }
