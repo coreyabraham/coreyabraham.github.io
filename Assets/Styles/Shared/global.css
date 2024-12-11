@@ -104,7 +104,7 @@ p.c
 .main 
 {
     float: right;
-    width: 87.5%;
+    width: 90%;
     padding: 0 20px;
     overflow: hidden;
 }
@@ -144,6 +144,12 @@ p.c
 
 @media only screen and (max-width:1000px)
 {
+    .main
+    {
+        width: 100%;
+        padding: 0px;
+    }
+
     .menu, .menuitem
     {
         margin-top: 0px;
@@ -165,14 +171,6 @@ p.c
     #barGradient
     {
         height: auto;   
-    }
-}
-
-@media only screen and (min-width:1001px)
-{
-    .menu
-    {
-        display: block;
     }
 }
 
