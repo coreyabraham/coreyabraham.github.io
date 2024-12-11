@@ -14,7 +14,15 @@
 
     <body>
         <div style="overflow: auto">
-			<div class="menu" id="barGradient">
+			<div class="iconcontainer" onclick="onMenuButtonClick(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+
+			<script type="text/javascript" src="../../Scripts/menuIcon.js"></script>
+
+            <div class="menu" id="barGradient">
 				<div class="menuheader">Navi-Bar</div>
 
 				<div class="menuitem">
@@ -28,7 +36,42 @@
 						<a>My Works</a>
 					</button>
 				</div>
-			</div>
+
+				<span style="display: block; height: 50px;"></span>
+				<div style="border-top: 1px solid white;"></div>
+				
+				<div class="menuitem">
+					<button class="button menubutton" name = "toggleButton" onclick="toggle()">
+						<a><< Projects >></a>
+					</button>
+				</div>
+
+				<div class="menuitem">
+					<button class="button menubutton" name="toggleable" onclick="window.location.href='../Projects/lights_out.html'">
+						<a>Lights Out</a>
+					</button>
+				</div>
+
+				<div class="menuitem">
+					<button class="button menubutton" name="toggleable" onclick="window.location.href='../Projects/monstacking.html'">
+						<a>Monstacking</a>
+					</button>
+				</div>
+
+				<div class="menuitem">
+					<button class="button menubutton" name="toggleable" onclick="window.location.href='../Projects/scurry.html'">
+						<a">Scurry</a>
+					</button>
+				</div>
+
+				<div class="menuitem">
+					<button class="button menubutton" name="toggleable">
+						<a style="font-weight: bold;">Typical Custom Engine</a>
+					</button>
+				</div>
+
+				<script type="text/javascript" src="../../../Assets/Scripts/toggleButton.js"></script>
+			</div> 
 
             <div class = "main">
                 <h1>C.A Website // Projects // Typical Custom Engine</h1>    
@@ -55,20 +98,37 @@
                 <span style="display: inline-block; height: 30px;"></span>
 
                 <h2>Project Details</h2>
-                <p>Game Engine: Custom (C++)</p>
+                <p>Game Engine: Custom (C++ & OpenGL)</p>
                 <p>Platform: PC // Windows 7+ x64</p>
                 <p>Role(s): Lead Developer</p>
                 <p>Development Date: August the 5th, 2024 - ONGOING</p>
 
                 <span style="display: inline-block; height: 30px;"></span>
 
-                <h2>Development</h2>
+                <h2>Brief</h2>
                 <p>
-                    DESCRIPTION GOES HERE!
+                    "Typical Custom Engine" is a C++ Engine that I've been working on in the small free time I get every now and then between my university work and the part time job that I do outside of the university course.
+                    I mainly work on this to showcase everything I've learnt while working here, as well as adding on top of that pre-established knowledge with my own works so I can truly experiment with what I can do without needing prior resources to do it!
+                </p>
+
+                <p>
+                    In it's current form, it's at it's most base level since I haven't worked on it as much as I wished, mainly in part to that free time I mentioned being quite slim, however I plan on working on it throughout 2025 as well, 
+                    so be sure to look for more commits going back and forward on the GitHub linked at the bottom of the page!
                 </p>
 
                 <span style="display: inline-block; height: 30px;"></span>
 
+                <h2>Attributions</h2>
+                <p>Currently, the engine includes the following dependencies to then build off of in the future, this may change in the future, and I'll be here to update it if it does! So here they are;</p>
+
+                <p><a href="https://www.opengl.org/">• OpenGL</a></p>
+                <p><a href="https://www.glfw.org/">• GLFW</a></p>
+                <p><a href="https://assimp.org/">• Assimp</a></p>
+                <p><a href="https://miniaud.io/index.html">• MINIAUDIO</a></p>
+                <p><a href="https://www.lua.org/">• Lua</a></p>
+
+                <span style="display: inline-block; height: 30px;"></span>
+                
                 <h2>Why?</h2>
                 <p>
                     INSERT DESCRIPTION HERE!
@@ -76,9 +136,9 @@
 
                 <span style="display: inline-block; height: 30px;"></span>
 
-                <h2>Attributions</h2>
+                <h2>Development</h2>
                 <p>
-                    INSERT DESCRIPTION HERE!
+                    DESCRIPTION GOES HERE!
                 </p>
 
                 <span style="display: inline-block; height: 30px;"></span>
@@ -98,4 +158,5 @@
     </body>
 
     <script type="text/javascript" src="../../Scripts/slideshow.js"></script>
+    <script type="text/javascript" src="../../Scripts/eventAdder.js"></script>
 </html>

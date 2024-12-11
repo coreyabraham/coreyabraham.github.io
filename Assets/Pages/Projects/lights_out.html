@@ -10,10 +10,19 @@
 
 		<link rel="stylesheet" type="text/css" href="../../Styles/Shared/global.css">
         <link rel="stylesheet" type="text/css" href="../../Styles/Shared/slideshow.css">
+        <link rel="stylesheet" type="text/css" href="../../Styles/Shared/projects.css">
     </header>
 
     <body>
         <div style="overflow: auto">
+			<div class="iconcontainer" onclick="onMenuButtonClick(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+
+			<script type="text/javascript" src="../../Scripts/menuIcon.js"></script>
+
 			<div class="menu" id="barGradient">
 				<div class="menuheader">Navi-Bar</div>
 
@@ -28,6 +37,41 @@
 						<a>My Works</a>
 					</button>
 				</div>
+
+				<span style="display: block; height: 50px;"></span>
+				<div style="border-top: 1px solid white;"></div>
+				
+				<div class="menuitem">
+					<button class="button menubutton" name = "toggleButton" onclick="toggle()">
+						<a><< Projects >></a>
+					</button>
+				</div>
+
+				<div class="menuitem">
+					<button class="button menubutton" name="toggleable">
+						<a style="font-weight: bold;">Lights Out</a>
+					</button>
+				</div>
+
+				<div class="menuitem">
+					<button class="button menubutton" name="toggleable" onclick="window.location.href='../Projects/monstacking.html'">
+						<a>Monstacking</a>
+					</button>
+				</div>
+
+				<div class="menuitem">
+					<button class="button menubutton" name="toggleable" onclick="window.location.href='../Projects/scurry.html'">
+						<a>Scurry</a>
+					</button>
+				</div>
+
+				<div class="menuitem">
+					<button class="button menubutton" name="toggleable" onclick="window.location.href='../Projects/typical_custom_engine.html'">
+						<a>Typical Custom Engine</a>
+					</button>
+				</div>
+
+				<script type="text/javascript" src="../../../Assets/Scripts/toggleButton.js"></script>
 			</div>
 
             <div class = "main">
@@ -40,20 +84,20 @@
                 <div class = "slideshow-container">
                     <div class="mySlides fade">
                         <div class="numbertext">1 / 3</div>
-                        <img src="../../Images/Lights Out/1.png" style="width: 100%">
+                        <img src="../../Images/Lights Out/Slideshow/1.png" style="width: 100%">
                         <div class="text">General Game Objects and Scenery</div>
                     </div>
 
                     <div class="mySlides fade">
-                    <div class="numbertext">2 / 3</div>
-                    <img src="../../Images/Lights Out/2.png" style="width: 100%">
-                    <div class="text">Darkness Mechanic with no Lighting</div>
+                        <div class="numbertext">2 / 3</div>
+                        <img src="../../Images/Lights Out/Slideshow/2.png" style="width: 100%">
+                        <div class="text">Darkness Mechanic with no Lighting</div>
                     </div>
 
                     <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
-                    <img src="../../Images/Lights Out/3.png" style="width: 100%">
-                    <div class="text">Exit Door with Glowtoy</div>
+                        <div class="numbertext">3 / 3</div>
+                        <img src="../../Images/Lights Out/Slideshow/3.png" style="width: 100%">
+                        <div class="text">Exit Door with Glowtoy</div>
                     </div>
 
                     <a class = "prev" onclick = "plusSlides(-1)">❮</a>
@@ -86,42 +130,71 @@
                 <span style="display: inline-block; height: 30px;"></span>
 
                 <h2>Contributions</h2>
-                <!-- TODO: PUT SOME IMAGES AND EXPLAINER TEXT IN REGARDS TO WHAT I DID DO INTERNALLY VIA PROGRAMMING6! -->
-                
                 <p>
-                    As this was the first team-based project I had ever worked on in any "professional" capacity (that being with industry tools like Unity of course), 
-                    I had a lot of learning to do and thus this project doesn't contain as much on my part unlike the other projects seen on this portfolio.
-                </p>
-                
-                <p>
-                    I do, however, still have talking points with this project, so I'll be discussing them now. The main take-away from this project was mainly it's backend systems and UI intergration,
-                    as at the time I was still relatively new to the Unity Engine, so developing UI and Backend Systems was a lot tricker than I had hoped, the good news is, is that it ended up working fine by the time the project was built.
+                    This was my first ever team based project I contributed towards while I was attending A.I.E, so a lot of what you see here is quite small contributions wise, however it's still worth showcasing what I did to get a better grasp of how I've improved over the years;
                 </p>
 
-                <p>
-                    As the project was being developed, I worked on a fair amount of things that the other two programmers couldn't at the time simply due to time management issues and having to work on other parts of the project simultaneously.
-                    At the start of the project, I was essentially responsible for creating the entire Technical Design Document at a base level, then having it be extended by everyone else as the project continued developement, this ended up saving us
-                    a lot of time in the long-run when it came to the Alpha stages of development as we could spend less time on the Pre-Production documentation side and more on the real prototyping of the game itself, which ended up giving us a chance to implement
-                    a lot of systematic functionality that otherwise wouldn't have been easy to introduce until much later into the project's development.
-                </p>
+                <span style="display: inline-block; height: 30px;"></span>
 
-                <p>
-                    I did state earlier I also worked on the UI Programming for the game, a large majority of the code produced for it was my own doing, mainly the Settings JSON and Unity API interfacing functionality.
-                    It took me quite a lot of time to get working within the limited time-frame we had to develop the project and a lot of pressure was built up in my head while developing it at the time as a result of it being the first team-based project I worked on of this caliber,
-                    however, after showing the work to the rest of the team, they luckily decided to keep it, so it ended up staying in the final release of the game.
-                </p>
+                <div class="row">
+                    <div class="column">
+                        <img src="../../Images/Lights Out/Contents/1.png">
+                    </div>
 
-                <p>
-                    I cannot say the same for the Pause Menu however, as that had to be cut during the final moments of the game's production mainly due to how busted it ended up being later on in the project's lifespan.
-                    It had a history of being busted during the project, then fixed, then busted again until we ultimately decided to scrap it all together due to it not really providing much of a benefit considering it's short runtime. 
-                </p>
+                    <div class="column">
+                        <p>
+                            As the project was being developed, I worked on a fair amount of things that the other two programmers couldn't at the time simply due to time management issues and having to work on other parts of the project simultaneously.
+                            At the start of the project, I was essentially responsible for creating the entire Technical Design Document at a base level, then having it be extended by everyone else as the project continued developement, this ended up saving us
+                            a lot of time in the long-run when it came to the Alpha stages of development as we could spend less time on the Pre-Production documentation side and more on the real prototyping of the game itself, which ended up giving us a chance to implement
+                            a lot of systematic functionality that otherwise wouldn't have been easy to introduce until much later into the project's development.
+                        </p>
+        
+                        <p>This Technical Design Document can be found here with the link below;</p>
+                        <p><a href="../../PDFs/Psyactive TDD.pdf">Psyactive TDD</a></p>
+                    </div>
+                </div>
 
+                <span style="display: inline-block; height: 30px;"></span>
+
+                <div class="row">
+                    <div class="column">
+                        <p>
+                            I did state earlier I also worked on the UI Programming for the game, a large majority of the code produced for it was my own doing, mainly the Settings JSON and Unity API interfacing functionality.
+                            It took me quite a lot of time to get working within the limited time-frame we had to develop the project and a lot of pressure was built up in my head while developing it at the time as a result of it being the first team-based project I worked on of this caliber,
+                            however, after showing the work to the rest of the team, they luckily decided to keep it, so it ended up staying in the final release of the game.
+                        </p>
+                    </div>
+                    
+                    <div class="column">
+                        <img src="../../Images/Lights Out/Contents/3.png">
+                    </div>
+                </div>
+
+                <span style="display: inline-block; height: 30px;"></span>
+
+                <div class="row">
+                    <div class="column">
+                        <img src="../../Images/Lights Out/Contents/5.png">
+                    </div>
+
+                    <div class="column">
+                        <p>
+                            I cannot say the same for the Pause Menu however, as that had to be cut during the final moments of the game's production mainly due to how busted it ended up being later on in the project's lifespan.
+                            It had a history of being busted during the project, then fixed, then busted again until we ultimately decided to scrap it all together due to it not really providing much of a benefit considering it's short runtime. 
+                        </p>
+                    </div>
+                </div>
+
+                <span style="display: inline-block; height: 30px;"></span>
+
+                <p>[The following description below is in the process of being rewritten!]</p>
                 <p>
                     Aside from those, I also worked on some Programming logic you see regularly throughout the game, including the Glowtoy object the main protagonist, Ruben, carries around throughout the game.
                     This was originally going to be Programmed by <a href="https://www.linkedin.com/in/devlyn-hendrie/">Devlyn</a>, the Lead Programmer for the project, however, I ultimately ended up working on it as a result of Devlyn being very busy with the game's internals and other more complex C# code.
                     Making this Script was when Unity's Programming APIs finally started to make sense in my head, a sort of "light spark" moment to so say, as I finally came to terms with how Unity handles it's rendering and timing of Update methods. Sure the Script could still have been improved, however, I was just mainly happy that it even worked,
                     let alone this well considering how little I understood making measured time via Update loops running on a per frame basis worked, let alone how to do it consistently with no issues. Ever since this project's conlusion, that very tiny knowledge has proved itself so much more than I would've expected otherwise, so I have this project to thank for giving me that understanding I desperately needed.
                 </p>
+                <p>[More descriptions and images will be added soon!]</p>
 
                 <span style="display: inline-block; height: 30px;"></span>
 
@@ -141,4 +214,5 @@
     </body>
 
     <script type="text/javascript" src="../../Scripts/slideshow.js"></script>
+    <script type="text/javascript" src="../../Scripts/eventAdder.js"></script>
 </html>

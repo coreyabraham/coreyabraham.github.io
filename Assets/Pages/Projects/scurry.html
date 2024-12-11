@@ -10,10 +10,19 @@
 
 		<link rel="stylesheet" type="text/css" href="../../Styles/Shared/global.css">
         <link rel="stylesheet" type="text/css" href="../../Styles/Shared/slideshow.css">
+        <link rel="stylesheet" type="text/css" href="../../Styles/Shared/projects.css">
     </header>
 
     <body>
         <div style="overflow: auto">
+			<div class="iconcontainer" onclick="onMenuButtonClick(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+
+			<script type="text/javascript" src="../../Scripts/menuIcon.js"></script>
+
 			<div class="menu" id="barGradient">
 				<div class="menuheader">Navi-Bar</div>
 
@@ -28,7 +37,42 @@
 						<a>My Works</a>
 					</button>
 				</div>
-			</div>  
+
+				<span style="display: block; height: 50px;"></span>
+				<div style="border-top: 1px solid white;"></div>
+				
+				<div class="menuitem">
+					<button class="button menubutton" name = "toggleButton" onclick="toggle()">
+						<a><< Projects >></a>
+					</button>
+				</div>
+
+				<div class="menuitem">
+					<button class="button menubutton" name="toggleable" onclick="window.location.href='../Projects/lights_out.html'">
+						<a>Lights Out</a>
+					</button>
+				</div>
+
+				<div class="menuitem">
+					<button class="button menubutton" name="toggleable" onclick="window.location.href='../Projects/monstacking.html'">
+						<a>Monstacking</a>
+					</button>
+				</div>
+
+				<div class="menuitem">
+					<button class="button menubutton" name="toggleable">
+						<a style="font-weight: bold;">Scurry</a>
+					</button>
+				</div>
+
+				<div class="menuitem">
+					<button class="button menubutton" name="toggleable" onclick="window.location.href='../Projects/typical_custom_engine.html'">
+						<a>Typical Custom Engine</a>
+					</button>
+				</div>
+
+				<script type="text/javascript" src="../../../Assets/Scripts/toggleButton.js"></script>
+			</div> 
 
             <div class = "main">
                 <h1>C.A Website // Projects // Scurry</h1>    
@@ -40,37 +84,37 @@
                 <div class = "slideshow-container">
                     <div class="mySlides fade">
                         <div class="numbertext">1 / 6</div>
-                        <img src="../../Images/Scurry/1.jpg" style="width: 100%">
+                        <img src="../../Images/Scurry/Slideshow/1.jpg" style="width: 100%">
                         <div class="text">Rat looking at washing machine in kitchen</div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext">2 / 6</div>
-                        <img src="../../Images/Scurry/2.jpg" style="width: 100%">
+                        <img src="../../Images/Scurry/Slideshow/2.jpg" style="width: 100%">
                         <div class="text">Rat observing air duct with faulty wire in alleyway</div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext">3 / 6</div>
-                        <img src="../../Images/Scurry/3.jpg" style="width: 100%">
+                        <img src="../../Images/Scurry/Slideshow/3.jpg" style="width: 100%">
                         <div class="text">Rat looking at stove fire in kitchen</div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext">4 / 6</div>
-                        <img src="../../Images/Scurry/4.jpg" style="width: 100%">
+                        <img src="../../Images/Scurry/Slideshow/4.jpg" style="width: 100%">
                         <div class="text">Rat jumping between boxes in kitchen</div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext">5 / 6</div>
-                        <img src="../../Images/Scurry/5.jpg" style="width: 100%">
+                        <img src="../../Images/Scurry/Slideshow/5.jpg" style="width: 100%">
                         <div class="text">Rat observing wet cement in alleway</div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext">6 / 6</div>
-                        <img src="../../Images/Scurry/6.jpg" style="width: 100%">
+                        <img src="../../Images/Scurry/Slideshow/6.jpg" style="width: 100%">
                         <div class="text">Title Screen - Credits</div>
                     </div>
 
@@ -106,11 +150,6 @@
                 </p>
 
                 <p>
-                    Fun Fact: The game during it's original planning phase had the intention of flipping the Player's perspective horizontally depending on what corner you turned at specific points of interest, 
-                    this was however, cut pretty early on in the prototyping phase as the implementation of the early Player and Camera Systems proved this would've been difficult on a Programming and, more importantly, a Design stand-point.
-                </p>
-
-                <p>
                     The remains of this system, along with other tested features, are mostly still intact within the game's files themselves and can be found via the GitHub Repository linked at the bottom of this page,
                     most of the older branches have these prototype assets still burried within the Assets directory!
                 </p>
@@ -118,19 +157,127 @@
                 <span style="display: inline-block; height: 30px;"></span>
 
                 <h2>Contributions</h2>
+                <p>We had quite a ways to go before the game could be seen in our eyes as "complete", as such, there's natrually a lot to show, so let's start off with the basics;</p>
+
                 <p>
-                    As one of two programmers (the other being <a href="https://www.linkedin.com/in/joshzurcas/">Josh Zurcas</a>), I was mainly responsible for the backend systems for the game as well as majority of the Camera System work, 
-                    all of the User Interface programming and lastly helping out with odd Scripting related refinement every once and a while where it was needed.
+                    Our team consisted of only two programmers, myself and Josh, as such we had a lot of work to do in order to make the game feel "complete" in a way and to start doing that, we of course created a Technical Design Document for the game.
+                    Just like <a href="../Projects/lights_out.html">Lights Out</a>, we have an online version of the TDD for anyone to read through to get a better idea of how the game would've been developed across it's runtime.
+                </p>
+
+                <p><a href="../../PDFs/TeamMischief_Scurry_TDD_V1.1.pdf">TDD_TeamMischief_0.1</a></p>
+
+                <!-- <p>
+                    Fun Fact: The game during it's original planning phase had the intention of flipping the Player's perspective horizontally depending on what corner you turned at specific points of interest, 
+                    this was however, cut pretty early on in the prototyping phase as the implementation of the early Player and Camera Systems proved this would've been difficult on a Programming and, more importantly, a Design stand-point.
+                </p> -->
+
+                <span style="display: inline-block; height: 60px;"></span>
+
+                <div class="row">
+                    <div class="column">
+                        <p>
+                            Right after we wrote the TDD, it was time for us to prototype, in the very early stages of development, the team discussed having a Player Controller and a Camera that had programming to flip the Player's perspective in a 2.5D plane.
+                            Seeing as the game was to be created in 3D, we wanted to experiment with the way that the Player interacts with the world, something with a little more flavor instead of going with the regular 2D controls a 2.5D game would usually adopt.
+                            However, it turned out that, amongst several discussions, this functionality would soon be cut due to it being too hard to execute on a design level, however during the development of said features, I wrote a starting Player Controller and Camera System
+                            which would be the basis for our game. Here's what it looked like during the Alpha stage;
+                        </p>
+                    </div>
+
+                    <div class="column">
+                        <img src="../../Images/Scurry/Contents/Alpha - Player Inspector.png">
+                    </div>
+                </div>
+
+                <span style="display: inline-block; height: 60px;"></span>
+
+                <p>With this in mind, we decided to stick with the 2D movement in 3D environemnt, traditional 2.5D experience and started refining the systems enough for a proper Alpha build.</p>
+                <p>By the time Alpha had finished, we had a servicable 2.5D Player and Camera System in place, here's the portions I ended up doing for the Player and Camera Systems during this time;</p>
+
+                <span style="display: inline-block; height: 60px;"></span>
+                
+                <div class="row">
+                    <div class="column">
+                        <img style="max-width: 100%;" src="../../Images/Scurry/Contents/Alpha - Editor View.png">
+                    </div>
+
+                    <div class="column">
+                        <img style="max-width: 50%;" src="../../Images/Scurry/Contents/Alpha - Camera Inspector.png">
+                    </div>
+                </div>
+
+                <span style="display: inline-block; height: 60px;"></span>
+
+                <p>
+                    As discussed with the Designers and Artists of the project, we wanted a Player system that really emphasised how small you are in comparison to the environment you're within and to do that, 
+                    we needed a more robust Player System, which is where my contributions come in. During the prototyping phase I threw together a basic movement system using Unity's built in CharacterController Component, then wrapped all inputs with the newer
+                    <a href="">Input System Package</a> Unity designed specifically to make multi-platform inputs less of a hassle and finally, I then added basic physics to the player character to make sure they had proper weight to them when jumping about.
+                </p>
+
+                <span style="display: inline-block; height: 60px;"></span>
+
+                <p>
+                    With the Player System out of the way, we needed a functioning Camera system that tracked the Player's movement, as such I started the task of building one from scratch using Unity's Camera Component system, at first things went surprisingly well,
+                    however, with time, comes new additions, which results in more time being sunk into the system to then add onto it and improve it as a whole, this system ended up being the most challenging component I worked on for the game and caused many
+                    issues during the development process, at points we even considered switching to <a href="">Cinemachine</a>, a Unity Package that's widely known for it's vast Camera functionality over the stock Camera.
                 </p>
 
                 <p>
-                    Josh and I had a joint effort when it comes to the Player System and most of the work is balanced between us and the Camera System had some help from <a href="https://www.linkedin.com/in/ethan-j-grigg/">Ethan Grigg</a> 
-                    to make sure all the Unity math for the Camera logic when using Camera Zones was correctly written.
+                    However, this proved to be unnecessary, as I got my act together and was able to finally fix most of the Camera's growing pains from the early Prototype days, thus paving the way for the Beta - Gold additions, which proved necessary
+                    considering how thorough the additions would later become.
                 </p>
 
-                <p>MORE WILL GO HERE SOON!</p>
+                <span style="display: inline-block; height: 60px;"></span>
 
-                <span style="display: inline-block; height: 30px;"></span>
+                <div class="row">
+                    <img style="max-width: 90%; display: block; margin-left: auto; margin-right: auto;" src="../../Images/Scurry/Contents/Alpha - Camera Volume.png">
+                </div>
+
+                <p>
+                    Note: The `ZoneCamera.cs` logic later on was written by me and Ethan, an Artist who ended up helping with the math and code-design behind the Zone Camera triggers and their intergration with the `CameraSystem.cs` C# Script, 
+                    everything else within both Scripts however was written myself.
+                </p>
+
+                <span style="display: inline-block; height: 60px;"></span>
+
+                <p>
+                    During this time, we were going for a more "realistic" feel to the rat, which was quickly changed come the Beta phase of the game, mainly due to our team having Play Testers who were quick to point out how, in a 2.D Platform based game,
+                    it felt slightly too restrictive in movement, more specifically air control and jumping between platforms within the levels themselves, it felt too imprecise, so with the help of Josh, we both reworked it heavily for the following builds to come after;
+                </p>
+
+                <span style="display: inline-block; height: 60px;"></span>
+
+                <div class="row">
+                    <img style="max-width: 90%; display: block; margin-left: auto; margin-right: auto;" src="../../Images/Scurry/Contents/Gold - Player Inspector.png">
+                </div>
+
+                <span style="display: inline-block; height: 60px;"></span>
+
+                <p>
+                    Another major part I had during the game's development was unfortunately scrapped due to time constraints and how riddled with bugs it ended up being by the time the project had wrapped up development,
+                    that being the Data Systems the game originally used. See, back in the Alpha and Beta builds of the game, we originally had the intention of creating a multitude of levels that the Rat would be tasked to go through,
+                    ultimately, we ended up with two main levels in a sort of "Demo" fashion, however, due to this difference in ideas, I had proposed the idea of there being Data Saving in the game which included the two main points; 
+                </p>
+
+                <p>• Save Files System</p>
+                <p>• Checkpoint System</p>
+
+                <p>
+                    Examples of both from earlier Alpha and Beta builds are provided below;
+                </p>
+
+                <span style="display: inline-block; height: 60px;"></span>
+                
+                <div class="row">
+                    <div class="column">
+                        <img style="max-width: 100%;" src="../../Images/Scurry/Contents/Alpha - Save System Screen.png">
+                    </div>
+
+                    <div class="column">
+                        <img style="max-width: 100%;" src="../../Images/Scurry/Contents/Alpha - Save System Screen.png">
+                    </div>
+                </div>
+
+                <span style="display: inline-block; height: 60px;"></span>
 
                 <h2>Gameplay and Trailers</h2>
 
@@ -171,4 +318,5 @@
     </body>
 
     <script type="text/javascript" src="../../Scripts/slideshow.js"></script>
+    <script type="text/javascript" src="../../Scripts/eventAdder.js"></script>
 </html>

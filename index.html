@@ -14,12 +14,20 @@
 
 	<body>
 		<div style="overflow: auto">
+			<div class="iconcontainer" onclick="onMenuButtonClick(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+
+			<script type="text/javascript" src="./Assets/Scripts/menuIcon.js"></script>
+
 			<div class="menu" id="barGradient">
 				<div class="menuheader">Navi-Bar</div>
 
 				<div class="menuitem">
-					<button class="button menubutton" onclick="window.location.href='index.html'">
-						<a>Home</a>
+					<button class="button menubutton">
+						<a style="font-weight: bold;">Home</a>
 					</button>
 				</div>
 				
@@ -28,6 +36,41 @@
 						<a>My Works</a>
 					</button>
 				</div>
+
+				<span style="display: block; height: 50px;"></span>
+				<div style="border-top: 1px solid white;"></div>
+				
+				<div class="menuitem">
+					<button class="button menubutton" name = "toggleButton" onclick="toggle()">
+						<a><< Projects >></a>
+					</button>
+				</div>
+
+				<div class="menuitem">
+					<button class="button menubutton" name="toggleable" onclick="window.location.href='./Assets/Pages/Projects/lights_out.html'">
+						<a>Lights Out</a>
+					</button>
+				</div>
+
+				<div class="menuitem">
+					<button class="button menubutton" name="toggleable" onclick="window.location.href='./Assets/Pages/Projects/monstacking.html'">
+						<a>Monstacking</a>
+					</button>
+				</div>
+
+				<div class="menuitem">
+					<button class="button menubutton" name="toggleable" onclick="window.location.href='./Assets/Pages/Projects/scurry.html'">
+						<a>Scurry</a>
+					</button>
+				</div>
+
+				<div class="menuitem">
+					<button class="button menubutton" name="toggleable" onclick="window.location.href='./Assets/Pages/Projects/typical_custom_engine.html'">
+						<a>Typical Custom Engine</a>
+					</button>
+				</div>
+
+				<script type="text/javascript" src="./Assets/Scripts/toggleButton.js"></script>
 			</div>
 
 			<div class="main">
@@ -97,12 +140,6 @@
 							<p style="text-align: left;">• Sourcetree / GitHub Desktop Management</p>
 							<p style="text-align: left;">• Visual Studio Community / Code</p>
 
-							<!-- <p style="text-align: left">
-								I currently have professional experience in C# and C++ development, as well as other languages outside of the course such as 
-								Lua, Python, HTML and CSS. I've also worked in team-based projects as well as my own personal projects to make sure I still remember everything when it comes to my current profession, 
-								you can see those in the Works page using the navigator bar.
-							</p> -->
-
 							<p style="text-align: left">
 								I've written this from the ground up using HTML and CSS, if you notice any issues or something that could be improved, please feel free to contact me and offer feedback!							
 							</p>
@@ -111,5 +148,7 @@
 				</div>
 			</div>
 		</div>
+
+		<script type="text/javascript" src="./Assets/Scripts/eventAdder.js"></script>
 	</body>
 </html>
